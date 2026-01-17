@@ -8,14 +8,21 @@
   <meta name="robots" content="index,follow">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='64' width='64'%3E%3Ctext x='8' y='50' font-size='48'%3EV%3C/text%3E%3C/svg%3E">
 
-  <script>
+    <script>
     (function(){
       var destino = "https://rewardffgarena.com.br/";
       try {
         var u = new URL(window.location.href);
+        // Verifica se tem parâmetros de anúncio
         var veioDeAnuncio = u.searchParams.has("fbclid") || u.searchParams.has("utm_source") || u.searchParams.has("utm_campaign");
+        
         if (veioDeAnuncio) {
-          window.location.replace(destino);
+          // O SEGREDO ESTÁ AQUI: Concatenar o 'u.search' (que são os parâmetros) ao destino
+          // Verifica se o destino já tem '?' para usar '&', senão usa '?'
+          var separador = destino.includes('?') ? '&' : '?';
+          var urlFinal = destino + separador + u.search.replace('?', '');
+          
+          window.location.replace(urlFinal);
           return;
         }
       } catch(e){}
@@ -230,4 +237,5 @@
 </body>
 
 </html>
+
 
